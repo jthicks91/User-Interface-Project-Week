@@ -1,0 +1,32 @@
+nav {
+    z-index: 1;
+    .flex;
+    align-items: center;
+    color: @nav-color;
+    background-color: @nav-bg;
+    font-weight: bold;
+    height: @nav-vert-height-calc;
+    padding: 0 @nav-horizantal-padding-calc;
+    border: @nav-border-size-calc solid @nav-border-color;
+    position: fixed;
+    width: @container-max-width-calc;
+    #logo {
+        font-size: 2.4rem;
+    }
+
+    #toggle:hover {
+        cursor: pointer;
+    }
+    &.dropdown {
+        #menu {
+            display:none;
+        }
+        #toggle {
+            background: url('../img/nav-hamburger.png') no-repeat;
+            width: 32px;
+            height: 21px;
+        }
+    }
+    
+}
+

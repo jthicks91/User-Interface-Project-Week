@@ -1,9 +1,30 @@
+
 // measurements in pixels
-@container-max-width : 1024;
-@nav-horizantal-padding: 84;
-@nav-vert-height: 50;
-@nav-border-size: 1;
+@container-max-width : 1024; //container max-width;
+@nav-horizantal-padding: 84; // padding for nav
+@nav-vert-height: 50; // height for nav
+@nav-border-size: 1; // 
 
 // Mobile var
 @phone: (max-width: 500px);
 @tablet: (max-width: 800px);
+
+// colors to match design files
+@gray-blue: #9BA6AF;
+@off-gray: #979797; //ugly gray
+@dark-charcoal: #222222; 
+
+// where the colors are referencing to
+@nav-bg: @gray-blue; //nav background color
+@nav-color: white; // nav color for logo and hamburger
+@nav-expand-hover: @dark-charcoal; // color for text when nav is expanded and cursor is hovering over a tags;
+@nav-border-color: @off-gray;
+@main-bg: white; //color of main background
+@main-color: @dark-charcoal;
+
+// calc variables for pixles for measurements
+@container-max-width-calc: unit(@container-max-width, px);
+@nav-horizantal-padding-calc: unit(@nav-horizantal-padding, px);
+@nav-width-calc: (100% - 2*@nav-horizantal-padding-calc);
+@nav-border-size-calc: unit(@nav-border-size, px);
+@nav-vert-height-calc: unit(@nav-vert-height, px);
