@@ -6,13 +6,19 @@
 @nav-border-size: 1; // 
 
 // Mobile var
-@phone: (max-width: 500px);
-@tablet: (max-width: 800px);
+@phone: "(max-width: 500px)";
+
 
 // colors to match design files
 @gray-blue: #9BA6AF;
 @off-gray: #979797; //ugly gray
 @dark-charcoal: #222222; 
+@super-light-gray: #CCCCCC;
+@medium-light-gray: #999999;
+@lighter-gray-half-alpha: rgba(151, 151, 151, 0.5);
+@gray: #828282;
+@off-charcoal: #493d3C;
+
 
 // where the colors are referencing to
 @nav-bg: @gray-blue; //nav background color
@@ -21,6 +27,12 @@
 @nav-border-color: @off-gray;
 @main-bg: white; //color of main background
 @main-color: @dark-charcoal;
+@footer-bg: @gray;
+@footer-border: @off-gray;
+@footer-input-border: @super-light-gray;
+@footer-input: @medium-light-gray;
+@header-color: white;
+
 
 // calc variables for pixles for measurements
 @container-max-width-calc: unit(@container-max-width, px);
