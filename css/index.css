@@ -211,6 +211,73 @@ nav.expanded #toggle {
   width: 24px;
   height: 25px;
 }
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 249px;
+  border: 1px solid #979797;
+  background-color: #828282;
+  color: white;
+  width: 100%;
+  font-size: 1.4rem;
+  line-height: 1.86;
+  padding-left: 82px;
+  padding-right: 82px;
+  padding-top: 60px;
+  padding-bottom: 5px;
+}
+footer .connect-addresses {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+footer .connect-addresses .connect input {
+  border-radius: 4px;
+  width: 279px;
+  height: 42px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  color: #999999;
+  border: 1px solid #CCCCCC;
+  padding-left: 7px;
+  margin-left: 1px;
+  margin-top: 14px;
+}
+footer .connect-addresses .connect input::placeholder {
+  font-size: 1.6rem;
+  color: #999999;
+  font-family: 'Roboto', sans-serif;
+}
+footer .connect-addresses .connect .important {
+  font-size: 1.3rem;
+  margin-left: 2px;
+  margin-top: 3px;
+}
+footer .connect-addresses .addresses {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 2px;
+  flex-direction: row;
+}
+footer .connect-addresses .addresses h3 {
+  padding-bottom: 4px;
+}
+footer .connect-addresses .addresses .CA {
+  padding-left: 88px;
+}
+footer .connect-addresses .addresses .FL {
+  padding-left: 78px;
+}
+footer h3 {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+footer small {
+  font-size: 1.2rem;
+  align-self: center;
+}
 .Jumbotron {
   height: 599px;
 }
@@ -274,4 +341,55 @@ nav.expanded #toggle {
 .main-content .top-item.flipped .content p {
   padding-top: 15px;
   padding-bottom: 30px;
+}
+.projects h2 {
+  padding-bottom: 40px;
+}
+.projects .project {
+  padding-bottom: 75px;
+  text-align: center;
+}
+.projects .project .title {
+  position: relative;
+  padding-bottom: 0;
+}
+.projects .project .title h3 {
+  letter-spacing: 8px;
+  font-size: 2.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  width: 315px;
+  height: 95px;
+  border: 1px solid white;
+  background-color: #D8D8D8;
+  position: absolute;
+  bottom: -34px;
+}
+.projects .project p:first-of-type {
+  padding-top: 84px;
+}
+.projects .project p {
+  display: inline-block;
+  width: 444px;
+  font-size: 1.8rem;
+  text-align: left;
+  padding-bottom: 24px;
+  margin-right: 4px;
+  line-height: 24px;
+}
+.projects .project.villas h3 {
+  padding-bottom: 4px;
+  padding-left: 10px;
+  right: -1px;
+}
+.projects .project.outskirts h3 {
+  padding-bottom: 4px;
+  padding-right: 1px;
+  left: 0px;
+}
+.projects .project.blocks h3 {
+  padding-top: 2px;
+  right: -2px;
 }
