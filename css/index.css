@@ -227,30 +227,15 @@ footer .connect-addresses .connect h4 {
   margin-bottom: 2rem;
   font-weight: bold;
 }
-@media (max-width: 510px) {
-  footer .connect-addresses .connect h4 {
-    line-height: 3rem;
-  }
-}
 footer .connect-addresses .connect p {
   padding: 1rem 0;
   color: white;
   font-size: 1.2rem;
 }
-@media (max-width: 510px) {
-  footer .connect-addresses .connect p {
-    padding-top: 2rem;
-  }
-}
 footer .connect-addresses .connect input {
   height: 4rem;
   width: 100%;
   border-radius: 5px;
-}
-@media (max-width: 510px) {
-  footer .connect-addresses {
-    flex-direction: column;
-  }
 }
 footer .location h4 {
   font-size: 2.4rem;
@@ -262,11 +247,6 @@ footer .location p {
   color: white;
   font-size: 1.6rem;
   line-height: 2.8rem;
-}
-@media mobile {
-  footer .location {
-    margin: 1.5rem 0;
-  }
 }
 footer .bottom-footer {
   display: flex;
@@ -282,16 +262,6 @@ footer .bottom-footer h6 {
 @media (max-width: 510px) {
   footer .bottom-footer h6 {
     padding: 3rem 0 1rem 0;
-  }
-}
-@media (max-width: 510px) {
-  footer .bottom-footer {
-    justify-content: flex-start;
-  }
-}
-@media (max-width: 510px) {
-  footer {
-    padding: 5% 5% 0 5%;
   }
 }
 .Jumbotron {
