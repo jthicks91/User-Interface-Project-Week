@@ -2,8 +2,13 @@
 //Jumbotron class
 .Jumbotron {
     height: 599px;
+    @media @phone {
+        height: 209px;
+        margin-bottom: 85px;
+    }
     img {
         z-index: 1;
+        max-width: 100%;
     }
     h2 {
         font-size: 6.4rem;
@@ -14,12 +19,20 @@
         top: -280px;
         left: 82px;
         z-index: 0;
+        @media @phone {
+            top: -155px;
+            left: 16px;
+            font-size: 3.6rem;
+        }
     }
 }// end
 
 .main-content {
     padding: 51px 86px;
     padding-bottom: 0;
+    @media @phone {
+        padding: 0;
+    }
     h2 {
         color: @dark-charcoal;
         font-weight: bold;

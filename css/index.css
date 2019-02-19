@@ -148,6 +148,15 @@ body {
   max-width: 1024px;
   margin: 0 auto;
   background-color: white;
+  font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 500px;
+  }
 }
 * {
   box-sizing: border-box;
@@ -155,6 +164,17 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+.mobile {
+  display: none;
+}
+@media (max-width: 500px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: inline-block;
+  }
 }
 nav {
   z-index: 1;
@@ -169,6 +189,12 @@ nav {
   border: 1px solid #979797;
   position: fixed;
   width: 1024px;
+}
+@media (max-width: 500px) {
+  nav {
+    width: 500px;
+    padding: 0 15px;
+  }
 }
 nav #logo {
   font-size: 2.4rem;
@@ -259,7 +285,7 @@ footer .bottom-footer h6 {
   font-size: 1.2rem;
   color: white;
 }
-@media (max-width: 510px) {
+@media (max-width: 500px) {
   footer .bottom-footer h6 {
     padding: 3rem 0 1rem 0;
   }
@@ -267,8 +293,15 @@ footer .bottom-footer h6 {
 .Jumbotron {
   height: 599px;
 }
+@media (max-width: 500px) {
+  .Jumbotron {
+    height: 209px;
+    margin-bottom: 85px;
+  }
+}
 .Jumbotron img {
   z-index: 1;
+  max-width: 100%;
 }
 .Jumbotron h2 {
   font-size: 6.4rem;
@@ -280,9 +313,21 @@ footer .bottom-footer h6 {
   left: 82px;
   z-index: 0;
 }
+@media (max-width: 500px) {
+  .Jumbotron h2 {
+    top: -155px;
+    left: 16px;
+    font-size: 3.6rem;
+  }
+}
 .main-content {
   padding: 51px 86px;
   padding-bottom: 0;
+}
+@media (max-width: 500px) {
+  .main-content {
+    padding: 0;
+  }
 }
 .main-content h2 {
   color: #222222;
