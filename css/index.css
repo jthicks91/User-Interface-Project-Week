@@ -291,16 +291,16 @@ footer .bottom-footer h6 {
   }
 }
 .Jumbotron {
-  height: 599px;
+  height: 598px;
 }
 @media (max-width: 500px) {
   .Jumbotron {
-    height: 209px;
-    margin-bottom: 85px;
+    height: 210px;
+    margin-bottom: 86px;
   }
 }
 .Jumbotron img {
-  z-index: 1;
+  z-index: -1;
   max-width: 100%;
 }
 .Jumbotron h2 {
@@ -334,16 +334,40 @@ footer .bottom-footer h6 {
   font-weight: bold;
   font-size: 2.4rem;
 }
+@media (max-width: 500px) {
+  .main-content h2 {
+    padding-top: 14px;
+  }
+}
 .main-content button {
   border: 1px solid black;
   width: 136px;
   height: 47px;
 }
+@media (max-width: 500px) {
+  .main-content button {
+    border: 1px solid black;
+    width: 100%;
+    height: 47px;
+  }
+}
+@media (max-width: 500px) {
+  .main-content .top-content {
+    padding-bottom: 24px;
+    padding: 5%;
+  }
+}
 .main-content .top-item {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 98px;
+  padding-bottom: 99px;
   flex-direction: row;
+}
+@media (max-width: 500px) {
+  .main-content .top-item {
+    flex-direction: column-reverse;
+    padding-bottom: 0px;
+  }
 }
 .main-content .top-item.S-J button {
   padding-left: 1px;
@@ -357,13 +381,26 @@ footer .bottom-footer h6 {
 }
 .main-content .top-item .content p {
   padding-top: 15px;
-  padding-bottom: 25px;
+  padding-bottom: 26px;
   width: 407px;
+  max-width: 100%;
 }
 .main-content .top-item.flipped {
-  padding-bottom: 92px;
+  padding-bottom: 93px;
   flex-direction: row-reverse;
-  padding-right: 6px;
+  padding-right: 7px;
+}
+@media (max-width: 500px) {
+  .main-content .top-item.flipped {
+    padding-right: 0px;
+    padding-bottom: 0px;
+    flex-direction: column-reverse;
+  }
+  .main-content .top-item.flipped img {
+    max-width: 100%;
+    padding-top: 45px;
+    padding-bottom: 8px;
+  }
 }
 .main-content .top-item.flipped .content {
   padding-top: 0;
@@ -373,12 +410,35 @@ footer .bottom-footer h6 {
   padding-top: 15px;
   padding-bottom: 30px;
 }
+@media (max-width: 500px) {
+  .main-content .top-item.flipped .content p {
+    padding-bottom: 26px;
+  }
+}
+@media (max-width: 500px) {
+  .projects {
+    width: 100%;
+    margin-top: 24px;
+    margin-bottom: 35px;
+  }
+}
 .projects h2 {
   padding-bottom: 40px;
 }
+@media (max-width: 500px) {
+  .projects h2 {
+    padding-bottom: 18px;
+    padding-left: 15px;
+  }
+}
 .projects .project {
-  padding-bottom: 75px;
+  padding-bottom: 76px;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .projects .project {
+    padding-bottom: 37px;
+  }
 }
 .projects .project .title {
   position: relative;
@@ -391,12 +451,29 @@ footer .bottom-footer h6 {
   justify-content: space-between;
   align-items: center;
   justify-content: center;
-  width: 315px;
-  height: 95px;
+  width: 316px;
+  height: 96px;
   border: 1px solid white;
   background-color: #D8D8D8;
   position: absolute;
   bottom: -34px;
+}
+@media (max-width: 500px) {
+  .projects .project .title h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    width: 290px;
+    height: 96px;
+    border: 1px solid white;
+    background-color: #D8D8D8;
+    border: none;
+    bottom: -74px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+  }
 }
 .projects .project p:first-of-type {
   padding-top: 84px;
@@ -404,23 +481,75 @@ footer .bottom-footer h6 {
 .projects .project p {
   display: inline-block;
   width: 444px;
+  max-width: 100%;
   font-size: 1.8rem;
   text-align: left;
   padding-bottom: 24px;
   margin-right: 4px;
   line-height: 24px;
 }
+@media (max-width: 500px) {
+  .projects .project p {
+    padding: 0 4.7%;
+    margin-right: 0;
+    margin-top: 17px;
+    padding-bottom: 7px;
+  }
+}
+@media (max-width: 500px) {
+  .projects .project img {
+    width: 100%;
+  }
+}
 .projects .project.villas h3 {
   padding-bottom: 4px;
   padding-left: 10px;
-  right: -1px;
+  right: 0px;
+}
+@media (max-width: 500px) {
+  .projects .project.villas h3 {
+    padding-bottom: 0;
+    padding-top: 2px;
+    width: 80%;
+  }
 }
 .projects .project.outskirts h3 {
   padding-bottom: 4px;
   padding-right: 1px;
   left: 0px;
 }
+@media (max-width: 500px) {
+  .projects .project.outskirts h3 {
+    padding-right: 3px;
+    padding-top: 1px;
+    padding: 0;
+    bottom: -76px;
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .projects .project.outskirts {
+    padding-bottom: 40px;
+  }
+  .projects .project.outskirts p {
+    margin-top: 20px;
+    padding-bottom: 5px;
+  }
+}
 .projects .project.blocks h3 {
   padding-top: 2px;
-  right: -2px;
+  right: 0px;
+}
+@media (max-width: 500px) {
+  .projects .project.blocks h3 {
+    padding-right: 3px;
+    bottom: -77px;
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .projects .project.blocks p {
+    margin-top: 19px;
+    padding-bottom: 5px;
+  }
 }
