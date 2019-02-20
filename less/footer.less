@@ -3,9 +3,25 @@ footer {
     padding: 5rem 5% 0 5%;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    font-size: 1.4rem;
+    line-height: 1.85;
+    @media @phone {
+        height: auto;
+        padding: 23px 5.9% 23px 4.4%;
+    }
     .connect-addresses {
         .flex;
+        flex-direction: row;
+        @media @phone {
+            flex-direction: column;
+            padding: 0;
+        }
         .connect {
+            @media @phone {
+                padding-bottom: 19px;
+            }
             h4 {
                 color: white;
                 font-size: 2.4rem;
@@ -39,6 +55,9 @@ footer {
             color: white;
             font-weight: bold;
             padding-bottom: 5px;
+            @media @phone {
+                padding-bottom: 0;
+            }
         }
         p {
             color: white;

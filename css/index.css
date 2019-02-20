@@ -242,10 +242,32 @@ footer {
   padding: 5rem 5% 0 5%;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  font-size: 1.4rem;
+  line-height: 1.85;
+}
+@media (max-width: 500px) {
+  footer {
+    height: auto;
+    padding: 23px 5.9% 23px 4.4%;
+  }
 }
 footer .connect-addresses {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
+}
+@media (max-width: 500px) {
+  footer .connect-addresses {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+@media (max-width: 500px) {
+  footer .connect-addresses .connect {
+    padding-bottom: 19px;
+  }
 }
 footer .connect-addresses .connect h4 {
   color: white;
@@ -268,6 +290,11 @@ footer .location h4 {
   color: white;
   font-weight: bold;
   padding-bottom: 5px;
+}
+@media (max-width: 500px) {
+  footer .location h4 {
+    padding-bottom: 0;
+  }
 }
 footer .location p {
   color: white;
