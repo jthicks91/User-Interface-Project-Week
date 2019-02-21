@@ -1,0 +1,56 @@
+
+
+.Services {
+    height: 293px;
+    @media @phone {
+        height: 210px;
+        margin-bottom: 86px;
+    }
+    img {
+        z-index: -1;
+        max-width: 100%;
+    }
+    h2 {
+        font-size: 6.4rem;
+        color: @header-color;
+        font-weight: bold;
+        line-height: 76/64;
+        position: relative;
+        top: -97px;
+        left: 82px;
+        z-index: 0;
+        @media @phone {
+            top: -155px;
+            left: 16px;
+            font-size: 3.6rem;
+        }
+    }
+}
+
+.Services-Content {
+    padding: 5% 8%;    
+    p {
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+    }
+}
+
+.tabs-container {
+    margin: 4rem 0;
+    width: 100%;
+    .flex;
+    .tabs-link {
+        width: 18rem;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+        border: 1px solid black;
+        padding: 1rem 0;
+        cursor: pointer;
+        &:hover {
+            color: white;
+            background-color: #5998AF;
+        }
+    }
+
+}

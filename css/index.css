@@ -580,3 +580,59 @@ footer .bottom-footer h6 {
     padding-bottom: 5px;
   }
 }
+.Services {
+  height: 293px;
+}
+@media (max-width: 500px) {
+  .Services {
+    height: 210px;
+    margin-bottom: 86px;
+  }
+}
+.Services img {
+  z-index: -1;
+  max-width: 100%;
+}
+.Services h2 {
+  font-size: 6.4rem;
+  color: white;
+  font-weight: bold;
+  line-height: 1.1875;
+  position: relative;
+  top: -97px;
+  left: 82px;
+  z-index: 0;
+}
+@media (max-width: 500px) {
+  .Services h2 {
+    top: -155px;
+    left: 16px;
+    font-size: 3.6rem;
+  }
+}
+.Services-Content {
+  padding: 5% 8%;
+}
+.Services-Content p {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+.tabs-container {
+  margin: 4rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.tabs-container .tabs-link {
+  width: 18rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  border: 1px solid black;
+  padding: 1rem 0;
+  cursor: pointer;
+}
+.tabs-container .tabs-link:hover {
+  color: white;
+  background-color: #5998AF;
+}
