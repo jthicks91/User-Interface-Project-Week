@@ -636,3 +636,34 @@ footer .bottom-footer h6 {
   color: white;
   background-color: #5998AF;
 }
+.tabs-container .tabs-link-selected {
+  background-color: #5998AF;
+  color: white;
+}
+.tabs-item-container {
+  display: flex;
+  margin-bottom: 4rem;
+}
+.tabs-item-container .tabs-item-left {
+  display: none;
+}
+.tabs-item-container .tabs-item-right {
+  display: none;
+}
+.tabs-item-container .tabs-item-selected {
+  display: flex;
+  flex-direction: column;
+}
+.tabs-item-container .tabs-item-selected h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.tabs-item-container .tabs-item-selected p {
+  line-height: 2.5rem;
+  font-size: 1.6rem;
+  width: 95%;
+}
+.tabs-item-container .tabs-item-selected img {
+  margin-top: 4rem;
+}

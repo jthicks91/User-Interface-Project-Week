@@ -52,5 +52,36 @@
             background-color: #5998AF;
         }
     }
+    .tabs-link-selected {
+        background-color: #5998AF;
+        color: white;
+    }
+}
 
+.tabs-item-container {
+    display: flex;
+    margin-bottom: 4rem;
+    .tabs-item-left {
+        display: none;
+    }
+    .tabs-item-right {
+        display: none;
+    }
+    .tabs-item-selected {
+        display: flex;
+        flex-direction: column;
+        h2{
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        p {
+            line-height: 2.5rem;
+            font-size: 1.6rem;
+            width: 95%;
+        }
+        img {
+            margin-top: 4rem;
+        }
+    }
 }
