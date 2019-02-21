@@ -205,20 +205,25 @@ nav #toggle:hover {
 nav.dropdown #menu {
   display: none;
 }
-nav.dropdown #toggle {
+nav #toggle {
   background: url('../img/nav-hamburger.png') no-repeat;
   width: 32px;
   height: 21px;
 }
-nav.expanded {
+.expanded {
   height: 100vh;
   opacity: 0.92;
 }
-nav.expanded #logo {
+.expanded #logo {
   align-self: flex-start;
   margin-top: 15px;
 }
-nav.expanded #menu {
+@media (max-width: 500px) {
+  .expanded #logo h1 {
+    font-size: 3.8rem;
+  }
+}
+.expanded #menu {
   display: flex;
   justify-content: space-between;
   margin-right: 12px;
@@ -227,15 +232,28 @@ nav.expanded #menu {
   font-size: 4.8rem;
   line-height: 1.77083333;
 }
-nav.expanded #menu a:hover {
+@media (max-width: 500px) {
+  .expanded #menu {
+    margin-top: -221px;
+    font-size: 6.8rem;
+  }
+}
+.expanded #menu a:hover {
   color: #222222;
 }
-nav.expanded #toggle {
+.expanded #toggle {
   align-self: flex-start;
-  margin-top: 2px;
+  margin-top: 19px;
   background: url('../img/nav-hamburger-close.png') no-repeat;
   width: 24px;
   height: 25px;
+}
+@media (max-width: 500px) {
+  .expanded #toggle {
+    margin-top: 27px;
+    padding: 4%;
+    background-size: 3rem;
+  }
 }
 footer {
   background-color: #828282;
