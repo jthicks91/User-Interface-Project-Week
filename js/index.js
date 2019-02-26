@@ -36,6 +36,8 @@ menu = new Menu(menu);
 
 /*--------------------------------------------------------------------------------------------------------------------------*/
 
+// Tab Component Logic Below //
+
 class TabLink {
   constructor(element) {
     this.element = element;
@@ -81,3 +83,35 @@ class TabItem {
 tabButtons = document
   .querySelectorAll(".tabs-link ")
   .forEach(tabButton => new TabLink(tabButton));
+
+/*---------------------------------------------------------------------------------------------------------------------------*/
+
+// GSAP Animation JS Below //
+
+window.addEventListener("load", () => {
+  TweenMax.staggerFrom(
+    "h2",
+    1.3,
+    { autoAlpha: 0, x: 200, ease: Back.easeOut.config(1.1) },
+    0.3
+  );
+  TweenMax.staggerFrom(
+    ".projects",
+    2.5,
+    { autoAlpha: 0, x: 200, ease: Back.easeOut.config(1.1) },
+    0.3
+  );
+  TweenMax.staggerFrom(
+    "#toggle",
+    2.5,
+    { autoAlpha: 0, x: 200, ease: Back.easeOut.config(1.1) },
+    0.3
+  );
+  TweenMax.staggerFrom(
+    "h1",
+    2.5,
+    { autoAlpha: 0, x: 200, ease: Back.easeOut.config(1.1) },
+    0.3
+  );
+  //   TweenLite.to(".menu", 2.5, { ease: Bounce.easeOut, y: -500 });
+});
