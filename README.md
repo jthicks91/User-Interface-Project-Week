@@ -27,9 +27,9 @@ You will use Trello to report your progress on the MVP and any extra features yo
 
 ## MVP Features:
 These MVP features represent the fundamental knowledge you should have obtained throughout the last 4 weeks.  If you cannot accomplish all of the MVP tasks listed here, you may be a candidate for the mastery based program.
-* [ ] Build layout **HTML/LESS**: [Home page desktop design](/DesignFiles/Home/home-desktop.png)
-* [ ] Build layout **HTML/LESS**: [Home page mobile design](/DesignFiles/Home/home-mobile.png)
-* [ ] Build layout **HTML/LESS**: [Services page **desktop design only**](/DesignFiles/Services/services-desktop.png)
+* [x] Build layout **HTML/LESS**: [Home page desktop design](/DesignFiles/Home/home-desktop.png)
+* [x] Build layout **HTML/LESS**: [Home page mobile design](/DesignFiles/Home/home-mobile.png)
+* [x] Build layout **HTML/LESS**: [Services page **desktop design only**](/DesignFiles/Services/services-desktop.png)
 * [ ] Build layout **HTML/LESS/JavaScript**: [Navigation system design](DesignFiles/Navigation)
 	* [Non-expanded View Design](DesignFiles/Navigation/non-expanded/non-expanded.png): When the navigation is not active, it should be fixed to the top of the page at all times
 	* [Expanded View Design](DesignFiles/Navigation/expanded): When a user clicks on the navigation icon a full page overlay will pop over all the content on the page. The navigation icon will be replaced by a close icon. The user must click the close icon to return back to browsing the website. The home and services pages need to be linked together using `<a></a>` tags. You must use your own custom JavaScript for the opening and closing functionality, no bootstrap allowed for functionality on this feature
@@ -53,3 +53,7 @@ Extra features are not in order of importance, it's just a list of features the 
 * Host your site on a domain you own
 
 Remember: This is a self driven challenge, try to accomplish MVP as soon as you can and stretch as much as you can on extra features.  Have fun with this and remember to reach out to your project managers after the 20 minute rule.  Good luck!
+
+
+
+Initial commit message

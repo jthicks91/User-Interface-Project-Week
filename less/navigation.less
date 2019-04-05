@@ -1,0 +1,80 @@
+// nav menu will display as hidden until it is activated via JavaScript to fill the whole screen;
+//vw will allow this to happen along with opacity for the background;
+nav {
+    z-index: 1;
+    .flex;
+    align-items: center;
+    color: @nav-color;
+    background-color: @nav-bg;
+    font-weight: bold;
+    height: @nav-vert-height-calc;
+    padding: 0 @nav-horizantal-padding-calc;
+    border: @nav-border-size-calc solid @nav-border-color;
+    position: fixed;
+    width: @container-max-width-calc;
+    @media @phone {
+        width: 500px;
+        padding: 0 15px;
+    }
+        #logo {
+        font-size: 2.4rem;
+    
+        
+    }
+
+    #toggle:hover {
+        cursor: pointer;
+    }
+    &.dropdown {
+        #menu {
+            display:none;
+            }
+        }
+        #toggle {
+            background: url('../img/nav-hamburger.png') no-repeat;
+            width: 32px;
+            height: 21px;
+        }
+    }
+    &.expanded {
+        height: 100vh;
+        opacity: 0.92;
+        #logo {
+            align-self: flex-start;
+            margin-top: 15px;
+            h1 {
+                @media @phone {
+                    font-size: 3.8rem;
+                }
+            }
+        }
+        #menu {
+            .flex;
+            margin-right: 12px;
+            margin-top: 2px;
+            flex-direction: column;
+            font-size: 4.8rem;
+            line-height: (85/48);
+            @media @phone {
+                margin-top: -221px;
+                font-size: 6.8rem;
+            }    
+         a:hover {
+            color: @nav-expand-hover
+        }
+    }
+        #toggle {
+            align-self: flex-start;
+            margin-top: 19px;
+            background: url('../img/nav-hamburger-close.png') no-repeat;
+            width: 24px;
+            height: 25px;
+            @media @phone {
+                margin-top: 27px;
+                padding: 4%;
+                background-size: 3rem;
+            }
+        }
+    }
+
+

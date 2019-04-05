@@ -1,0 +1,92 @@
+footer {
+    background-color: @gray;
+    padding: 5rem 5% 0 5%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    font-size: 1.4rem;
+    line-height: 1.85;
+    text-align: center;
+    @media @phone {
+        height: auto;
+        padding: 23px 5.9% 23px 4.4%;
+    }
+    .connect-addresses {
+        .flex;
+        flex-direction: row;
+        @media @phone {
+            flex-direction: column;
+            padding: 0;
+        }
+        .connect {
+            @media @phone {
+                padding-bottom: 19px;
+            }
+            h4 {
+                color: white;
+                font-size: 2.4rem;
+                margin-bottom: 2rem;
+                font-weight: bold;
+                // @media @mobile {
+                //     line-height: 3rem;
+                // }
+            }
+            p {
+                padding: 1rem 0;
+                color: white;
+                font-size: 1.2rem;
+                // @media @mobile {
+                //     padding-top: 2rem;
+                // }
+            }
+            input {
+                height: 4rem;
+                width: 100%;
+                border-radius: 5px;
+            }
+        }
+        // @media @mobile {
+        //     flex-direction: column;
+        // }
+    }
+    .location {
+        h4 {
+            font-size: 2.4rem;
+            color: white;
+            font-weight: bold;
+            padding-bottom: 5px;
+            @media @phone {
+                padding-bottom: 0;
+            }
+        }
+        p {
+            color: white;
+            font-size: 1.6rem;
+            line-height: 2.8rem;
+        }
+        // @media mobile {
+        //     margin: 1.5rem 0;
+        // }
+    }
+    .bottom-footer {
+        display: flex;
+        justify-content: center;
+        align-content: flex-end;
+        align-items: flex-end;
+        h6 {
+            padding: 3rem 0 1rem 7%;
+            font-size: 1.2rem;
+            color: white;
+            @media @phone {
+                padding: 3rem 0 1rem 0;
+            }
+        }
+        // @media @mobile {
+        //     justify-content: flex-start;
+        // }
+    }
+    // @media @mobile {
+    //     padding: 5% 5% 0 5%;
+    // }
+}

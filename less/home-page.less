@@ -1,0 +1,224 @@
+
+//Jumbotron class
+.Jumbotron {
+    height: 598px;
+    @media @phone {
+        height: 210px;
+        margin-bottom: 86px;
+    }
+    img {
+        z-index: -1;
+        max-width: 100%;
+    }
+    h2 {
+        font-size: 6.4rem;
+        color: @header-color;
+        font-weight: bold;
+        line-height: 76/64;
+        position: relative;
+        top: -280px;
+        left: 82px;
+        z-index: 0;
+        @media @phone {
+            top: -155px;
+            left: 16px;
+            font-size: 3.6rem;
+        }
+    }
+}// end
+
+.main-content {
+    padding: 51px 86px;
+    padding-bottom: 0;
+    @media @phone {
+        padding: 0;
+    }
+    h2 {
+        color: @dark-charcoal;
+        font-weight: bold;
+        font-size: 2.4rem;
+        @media @phone {
+            padding-top: 14px;
+        }
+    }
+    button {
+        .button(136px, 47px);
+        @media @phone {
+            .button(100%, 47px);
+        }
+    }
+    .top-content {
+        @media @phone {
+            padding-bottom: 24px;
+            padding: 5%;
+        }
+    }
+    .top-item {
+        .flex;
+        padding-bottom: 99px;
+        flex-direction: row;
+        @media @phone {
+            flex-direction: column-reverse;
+            padding-bottom: 0px;
+        }
+
+        &.S-J {
+            button {
+                padding-left: 1px;
+            }
+        }
+        .content {
+            .flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-top: 5px;
+            p {
+                padding-top: 15px;
+                padding-bottom: 26px;
+                width: 407px;
+                max-width: 100%;
+            }
+        } // end of top-content .content 
+        &.flipped {
+            padding-bottom: 93px;
+            flex-direction: row-reverse;
+            padding-right: 7px;
+            @media @phone {
+                padding-right: 0px;
+                padding-bottom: 0px;
+                flex-direction: column-reverse;
+                img {
+                    max-width: 100%;
+                    padding-top: 45px;
+                    padding-bottom: 8px;
+                }
+            }
+            .content {
+                padding-top: 0;
+                padding-bottom: 6px;
+            p {
+                padding-top: 15px;
+                padding-bottom: 30px;
+                @media @phone {
+                    padding-bottom: 26px;
+                }
+                }
+            }
+        }
+    } // end of top-content 
+  }// end of main-content// 
+  .projects {
+      @media @phone {
+          width: 100%;
+          margin-top: 24px;
+          margin-bottom: 35px;
+      }
+      h2 {
+          padding-bottom: 40px;
+          @media @phone {
+              padding-bottom: 18px;
+              padding-left: 15px;
+          }
+      }
+      .project {
+          padding-bottom: 76px;
+          text-align: center;
+          @media @phone {
+              padding-bottom: 37px;
+          }
+          .title { 
+              position: relative;
+              padding-bottom: 0;
+              h3 {
+                  letter-spacing: 8px;
+                  font-size: 2.4rem;
+                  .projectSetup(316px, 96px);
+                  position: absolute;
+                  bottom: -34px;
+                  @media @phone {
+                      .projectSetup(290px, 96px);
+                      border: none;
+                      bottom: -74px;
+                      margin: 0 auto;
+                      left: 0;
+                      right: 0;
+                  }
+              }
+          }
+          p:first-of-type {
+              padding-top: 84px;
+          }
+          p {
+              display: inline-block;
+              width: 444px;
+              max-width: 100%;
+              font-size: 1.8rem;
+              text-align: left;
+              padding-bottom: 24px;
+              margin-right: 4px;
+              line-height: 24px;
+              @media @phone {
+                  padding: 0 4.7%;
+                  margin-right: 0;
+                  margin-top: 17px;
+                  padding-bottom: 7px;
+              }
+            }
+            
+            @media @phone {
+                img {
+                    width: 100%;
+                }
+            }
+          &.villas {
+              h3 {
+                  padding-bottom: 4px;
+                  padding-left: 10px;
+                  right: 0px;
+                  @media @phone {
+                      padding-bottom: 0;
+                      padding-top: 2px;
+                      width: 80%;
+                  }
+              }
+          }
+          &.outskirts {
+              h3 {
+                  padding-bottom: 4px;
+                  padding-right: 1px;
+                  left: 0px;
+                  @media @phone {
+                      padding-right: 3px;
+                      padding-top: 1px;
+                      padding: 0;
+                      bottom: -76px;
+                      width: 80%;
+                  }
+              }
+              @media @phone {
+                  padding-bottom: 40px;
+                  p {
+                      margin-top: 20px;
+                      padding-bottom: 5px;
+                  }
+              }
+          }
+          &.blocks {
+              h3 {
+                  padding-top: 2px;
+                  right: 0px;
+                  @media @phone {
+                      padding-right: 3px;
+                      bottom: -77px;
+                      width: 80%;
+                  }
+                }
+                @media @phone {
+                    p {
+                        margin-top: 19px;
+                        padding-bottom: 5px;
+                    }
+                }
+              } // end of .blocks
+          } // end of &.project
+    } // end of .projects

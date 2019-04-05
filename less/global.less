@@ -1,0 +1,44 @@
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: (24/16);
+    background-color: black;
+}
+
+.container {
+    max-width: @container-max-width-calc;
+    margin: 0 auto;
+    background-color: white;
+    font-size: 1.6rem;
+    @media @phone {
+        .mobile-content;
+        max-width: 500px;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+// use to hide mobile images on desktop view and vice versa for desktop images on mobile view;
+
+.mobile {
+    display: none;
+}
+@media @phone {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: inline-block;
+    }
+}
